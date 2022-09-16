@@ -1,6 +1,7 @@
 import 'package:first_flutter_app/navibar.dart';
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class Home_Gallery extends StatefulWidget {
   const Home_Gallery({super.key});
 
@@ -8,6 +9,7 @@ class Home_Gallery extends StatefulWidget {
   State<Home_Gallery> createState() => _Home_GalleryState();
 }
 
+// ignore: camel_case_types
 class _Home_GalleryState extends State<Home_Gallery> {
   List<String> images = [
     "assets/images/1.jpg",
@@ -45,6 +47,7 @@ class _Home_GalleryState extends State<Home_Gallery> {
     return Flexible(
         child: GridView.builder(
       itemCount: images.length,
+      
       itemBuilder: (BuildContext context, int index) {
         return GestureDetector(
           onTap: (){
@@ -57,6 +60,8 @@ class _Home_GalleryState extends State<Home_Gallery> {
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 3, mainAxisSpacing: 10, crossAxisSpacing: 10),
       padding: const EdgeInsets.all(10),
+      
+
       shrinkWrap: true,
     ));
   }

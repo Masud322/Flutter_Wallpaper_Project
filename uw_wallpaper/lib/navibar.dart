@@ -21,7 +21,7 @@ class _NaviBarState extends State<NaviBar> {
 
   @override
   Widget build(BuildContext context) {
-    return  NavigationBarTheme(data: const NavigationBarThemeData(
+    return SafeArea(child:  NavigationBarTheme(data: const NavigationBarThemeData(
      indicatorColor: Colors.black,
      labelTextStyle: MaterialStatePropertyAll(
       TextStyle(
@@ -50,6 +50,7 @@ class _NaviBarState extends State<NaviBar> {
      
     ),
     
+    ),
     );
   }
 }
