@@ -1,7 +1,16 @@
 import 'dart:html';
 
 import 'package:first_flutter_app/Home_gallery.dart';
-import 'package:first_flutter_app/cetegory.dart/animal.dart';
+import 'package:first_flutter_app/cetegory.dart/abstract.dart';
+import 'package:first_flutter_app/cetegory.dart/animals.dart';
+import 'package:first_flutter_app/cetegory.dart/car.dart';
+import 'package:first_flutter_app/cetegory.dart/food.dart';
+import 'package:first_flutter_app/cetegory.dart/games.dart';
+import 'package:first_flutter_app/cetegory.dart/movies.dart';
+import 'package:first_flutter_app/cetegory.dart/nature.dart';
+import 'package:first_flutter_app/cetegory.dart/space.dart';
+import 'package:first_flutter_app/cetegory.dart/sports.dart';
+import 'package:first_flutter_app/cetegory.dart/travel.dart';
 import 'package:first_flutter_app/details_page.dart';
 import 'package:first_flutter_app/drawer.dart';
 import 'package:first_flutter_app/main.dart';
@@ -87,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 onTap: () {
                   Navigator.push(
                  context,
-                   MaterialPageRoute(builder: (context) => const AnimalPage()),
+                   MaterialPageRoute(builder: (context) => const AbstractPage()),
                    
                    );
                 },
@@ -98,7 +107,32 @@ class _MyHomePageState extends State<MyHomePage> {
                   height: 140,
                   decoration: BoxDecoration(
                     color: Colors.black.withOpacity(0.5),
-                    image: const DecorationImage(image: AssetImage('assets/images/animals/25.jpg'),fit: BoxFit.cover,
+                    image: const DecorationImage(image: AssetImage('assets/images/abstract/5.jpg'),fit: BoxFit.cover,
+                    ),
+                    border: Border.all(width: 1),
+                    borderRadius: BorderRadius.circular(10)
+                  ),
+                   child: const Center(
+                    child: Text('ABSTRACT',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight. bold),),
+                   )
+                   
+                  ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                 context,
+                   MaterialPageRoute(builder: (context) => const AnimalPage()),
+                   
+                   );
+                },
+                child: Container(
+                  padding: const EdgeInsets.all(12),
+                  margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
+                  height: 140,
+                  decoration: BoxDecoration(
+                    color: Colors.black.withOpacity(0.5),
+                    image: const DecorationImage(image: AssetImage('assets/images/animals/21.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
@@ -113,7 +147,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 onTap: () {
                   Navigator.push(
                  context,
-                   MaterialPageRoute(builder: (context) => const AnimalPage()),
+                   MaterialPageRoute(builder: (context) => const CarPage()),
                    
                    );
                 },
@@ -123,32 +157,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   height: 140,
                   decoration: BoxDecoration(
                     color: Colors.black.withOpacity(0.5),
-                    image: const DecorationImage(image: AssetImage('assets/images/birds/43.jpg'),fit: BoxFit.cover,
-                    ),
-                    border: Border.all(width: 1),
-                    borderRadius: BorderRadius.circular(10)
-                  ),
-                   child: const Center(
-                    child: Text('BIRDS',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight. bold),),
-                   )
-                   
-                  ),
-              ),
-              GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                 context,
-                   MaterialPageRoute(builder: (context) => const AnimalPage()),
-                   
-                   );
-                },
-                child: Container(
-                  padding: const EdgeInsets.all(12),
-                  margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
-                  height: 140,
-                  decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.5),
-                    image: const DecorationImage(image: AssetImage('assets/images/car/51.jpeg'),fit: BoxFit.cover,
+                    image: const DecorationImage(image: AssetImage('assets/images/car/58.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
@@ -163,7 +172,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 onTap: () {
                   Navigator.push(
                  context,
-                   MaterialPageRoute(builder: (context) => const AnimalPage()),
+                   MaterialPageRoute(builder: (context) => const FoodPage()),
                    
                    );
                 },
@@ -188,7 +197,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 onTap: () {
                   Navigator.push(
                  context,
-                   MaterialPageRoute(builder: (context) => const AnimalPage()),
+                   MaterialPageRoute(builder: (context) => const GamesPage()),
                    
                    );
                 },
@@ -213,7 +222,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 onTap: () {
                   Navigator.push(
                  context,
-                   MaterialPageRoute(builder: (context) => const AnimalPage()),
+                   MaterialPageRoute(builder: (context) => const MoviePage()),
                    
                    );
                 },
@@ -238,7 +247,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 onTap: () {
                   Navigator.push(
                  context,
-                   MaterialPageRoute(builder: (context) => const AnimalPage()),
+                   MaterialPageRoute(builder: (context) => const NaturePage()),
                    
                    );
                 },
@@ -264,7 +273,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 onTap: () {
                   Navigator.push(
                  context,
-                   MaterialPageRoute(builder: (context) => const AnimalPage()),
+                   MaterialPageRoute(builder: (context) => const SportsPage()),
                    
                    );
                 },
@@ -289,7 +298,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 onTap: () {
                   Navigator.push(
                  context,
-                   MaterialPageRoute(builder: (context) => const AnimalPage()),
+                   MaterialPageRoute(builder: (context) => const SpacePage()),
                    
                    );
                 },
@@ -314,7 +323,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 onTap: () {
                   Navigator.push(
                  context,
-                   MaterialPageRoute(builder: (context) => const AnimalPage()),
+                   MaterialPageRoute(builder: (context) => const TravelPage()),
                    
                    );
                 },

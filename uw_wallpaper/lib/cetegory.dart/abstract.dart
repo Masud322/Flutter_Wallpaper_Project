@@ -4,11 +4,11 @@ import 'package:first_flutter_app/navibar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const SportsPage());
+  runApp(const AbstractPage());
 }
 
-class SportsPage extends StatelessWidget {
-  const SportsPage({Key? key}) : super(key: key);
+class AbstractPage extends StatelessWidget {
+  const AbstractPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -33,71 +33,71 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final List<ImageDetails> _images = [
   ImageDetails(
-    imagePath: 'assets/images/animals/21.jpg',
+    imagePath: 'assets/images/abstract/1.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/22.jpg',
+    imagePath: 'assets/images/abstract/2.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/23.jpg',
+    imagePath: 'assets/images/abstract/9.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/24.jpg',
+    imagePath: 'assets/images/abstract/4.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/25.jpg',
+    imagePath: 'assets/images/abstract/5.jpg',
 
     title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/26.jpg',
+    imagePath: 'assets/images/abstract/6.jpg',
 
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/27.jpg',
+    imagePath: 'assets/images/abstract/7.jpg',
     title: 'New York',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/28.jpg',
+    imagePath: 'assets/images/abstract/8.jpg',
     title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/29.jpg',
+    imagePath: 'assets/images/abstract/9.jpg',
     title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/30.jpg',
+    imagePath: 'assets/images/abstract/6.jpg',
     title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/31.jpg',
+    imagePath: 'assets/images/abstract/11.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/32.jpg',
+    imagePath: 'assets/images/abstract/12.jpg',
     title: 'DOWNLODE NOW',
  
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/33.jpg',
+    imagePath: 'assets/images/abstract/13.jpg',
     title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/34.jpg',
+    imagePath: 'assets/images/abstract/14.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/35.jpg',
+    imagePath: 'assets/images/abstract/14.jpg',
     title: 'DOWNLODE NOW',
 
   ),
@@ -129,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 15,
             ),
             const Text(
-              '.....Sports.....',
+              '.....Abstract.....',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w600,
