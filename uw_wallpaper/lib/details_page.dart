@@ -3,17 +3,11 @@ import 'package:flutter/material.dart';
 class DetailsPage extends StatefulWidget {
   final String imagePath;
   final String title;
-  final String photographer;
-  final String price;
-  final String details;
   final int index;
   const DetailsPage(
       {
       required this.imagePath,
       required this.title,
-      required this.photographer,
-      required this.price,
-      required this.details,
       required this.index
       }
       );
@@ -64,29 +58,9 @@ class _DetailsPageState extends State<DetailsPage> {
                             fontWeight: FontWeight.w600,
                           ),
                         ),
-                        Text(
-                          'By ${widget.photographer}',
-                          style: const TextStyle(
-                            fontSize: 10,
-                          ),
-                        ),
-                        Text(
-                          widget.price,
-                          style: const TextStyle(
-                            color: Colors.lightBlueAccent,
-                            fontSize: 18,
-                            fontWeight: FontWeight.w400,
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        Text(
-                          widget.details,
-                          style: const TextStyle(
-                            fontSize: 14,
-                          ),
-                        ),
+                        
+                       
+                        
                       ],
                     ),
                   ),
@@ -110,19 +84,7 @@ class _DetailsPageState extends State<DetailsPage> {
                       const SizedBox(
                         width: 15,
                       ),
-                      Expanded(
-                        child: TextButton(
-                          onPressed: () {},
-                          // padding: const EdgeInsets.symmetric(vertical: 15),
-                          // color: Colors.lightBlueAccent,
-                          child: const Text(
-                            'Buy',
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                      ),
+                      
                     ],
                   )
                 ],

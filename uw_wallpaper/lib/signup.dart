@@ -2,9 +2,6 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:first_flutter_app/main.dart';
-import 'package:first_flutter_app/home_page.dart';
-
-import 'home_page.dart';
 class SignUp_1 extends StatefulWidget {
   const SignUp_1({super.key});
 

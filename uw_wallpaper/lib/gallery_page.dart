@@ -6,8 +6,6 @@ import 'package:first_flutter_app/details_page.dart';
 import 'package:first_flutter_app/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:first_flutter_app/login_page.dart';
-
-import 'home_page.dart';
 import 'navibar.dart';
 
 void main() {
@@ -78,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 10),
                   height: 140,
                   decoration: BoxDecoration(
-                    image: const DecorationImage(image: AssetImage('assets/images/6.jpg'),fit: BoxFit.cover,
+                    image: const DecorationImage(image: AssetImage('assets/images/animals/88.png'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
@@ -102,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
                   height: 140,
                   decoration: BoxDecoration(
-                    image: const DecorationImage(image: AssetImage('assets/images/6.jpg'),fit: BoxFit.cover,
+                    image: const DecorationImage(image: AssetImage('assets/images/birds/41.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
@@ -126,7 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
                   height: 140,
                   decoration: BoxDecoration(
-                    image: const DecorationImage(image: AssetImage('assets/images/6.jpg'),fit: BoxFit.cover,
+                    image: const DecorationImage(image: AssetImage('assets/images/car/51.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
@@ -150,7 +148,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
                   height: 140,
                   decoration: BoxDecoration(
-                    image: const DecorationImage(image: AssetImage('assets/images/6.jpg'),fit: BoxFit.cover,
+                    image: const DecorationImage(image: AssetImage('assets/images/food/61.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
@@ -174,7 +172,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
                   height: 140,
                   decoration: BoxDecoration(
-                    image: const DecorationImage(image: AssetImage('assets/images/6.jpg'),fit: BoxFit.cover,
+                    image: const DecorationImage(image: AssetImage('assets/images/games/71.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
@@ -198,7 +196,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
                   height: 140,
                   decoration: BoxDecoration(
-                    image: const DecorationImage(image: AssetImage('assets/images/6.jpg'),fit: BoxFit.cover,
+                    image: const DecorationImage(image: AssetImage('assets/images/movies/81.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
@@ -222,7 +220,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
                   height: 140,
                   decoration: BoxDecoration(
-                    image: const DecorationImage(image: AssetImage('assets/images/6.jpg'),fit: BoxFit.cover,
+                    image: const DecorationImage(image: AssetImage('assets/images/nature/91.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
@@ -246,7 +244,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
                   height: 140,
                   decoration: BoxDecoration(
-                    image: const DecorationImage(image: AssetImage('assets/images/6.jpg'),fit: BoxFit.cover,
+                    image: const DecorationImage(image: AssetImage('assets/images/space/101.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
@@ -270,7 +268,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
                   height: 140,
                   decoration: BoxDecoration(
-                    image: const DecorationImage(image: AssetImage('assets/images/6.jpg'),fit: BoxFit.cover,
+                    image: const DecorationImage(image: AssetImage('assets/images/sports/113.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
@@ -294,7 +292,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
                   height: 140,
                   decoration: BoxDecoration(
-                    image: const DecorationImage(image: AssetImage('assets/images/6.jpg'),fit: BoxFit.cover,
+                    image: const DecorationImage(image: AssetImage('assets/images/travel/121.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)

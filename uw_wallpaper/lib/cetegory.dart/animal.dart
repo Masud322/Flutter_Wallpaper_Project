@@ -35,124 +35,73 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final List<ImageDetails> _images = [
   ImageDetails(
-    imagePath: 'assets/images/animals21.JPG',
-    price: '\$20.00',
-    photographer: 'Martin Andres',
+    imagePath: 'assets/images/animals/21.jpg',
     title: 'New Year',
-    details:
-        'This image was taken during a party in New York on new years eve. Quite a colorful shot.',
   ),
   ImageDetails(
-    imagePath: 'assets/images/2.jpg',
-    price: '\$10.00',
-    photographer: 'Abraham Costa',
+    imagePath: 'assets/images/animals/22.jpg',
     title: 'Spring',
-    details:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error aspernatur, sequi inventore eligendi vitae dolorem animi suscipit. Nobis, cumque.',
   ),
   ImageDetails(
-    imagePath: 'assets/images/3.png',
-    price: '\$30.00',
-    photographer: 'Jamie Bryan',
+    imagePath: 'assets/images/animals/23.jpg',
     title: 'Casual Look',
-    details:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error aspernatur, sequi inventore eligendi vitae dolorem animi suscipit. Nobis, cumque.',
   ),
   ImageDetails(
-    imagePath: 'assets/images/4.jpg',
-    price: '\$20.00',
-    photographer: 'Jamie Bryan',
+    imagePath: 'assets/images/animals/24.jpg',
     title: 'New York',
-    details:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error aspernatur, sequi inventore eligendi vitae dolorem animi suscipit. Nobis, cumque.',
   ),
   ImageDetails(
-    imagePath: 'assets/images/5.jpg',
-    price: '\$20.00',
-    photographer: 'Jamie Bryan',
+    imagePath: 'assets/images/animals/25.jpg',
+
     title: 'New York',
-    details:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error aspernatur, sequi inventore eligendi vitae dolorem animi suscipit. Nobis, cumque.',
+
   ),
   ImageDetails(
-    imagePath: 'assets/images/6.jpg',
-    price: '\$20.00',
-    photographer: 'Jamie Bryan',
+    imagePath: 'assets/images/animals/26.jpg',
+
     title: 'New York',
-    details:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error aspernatur, sequi inventore eligendi vitae dolorem animi suscipit. Nobis, cumque.',
   ),
   ImageDetails(
-    imagePath: 'assets/images/7.jpg',
-    price: '\$20.00',
-    photographer: 'Jamie Bryan',
+    imagePath: 'assets/images/animals/27.jpg',
     title: 'New York',
-    details:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error aspernatur, sequi inventore eligendi vitae dolorem animi suscipit. Nobis, cumque.',
   ),
   ImageDetails(
-    imagePath: 'assets/images/8.jpg',
-    price: '\$20.00',
-    photographer: 'Jamie Bryan',
+    imagePath: 'assets/images/animals/28.jpg',
     title: 'New York',
-    details:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error aspernatur, sequi inventore eligendi vitae dolorem animi suscipit. Nobis, cumque.',
+
   ),
   ImageDetails(
-    imagePath: 'assets/images/9.jpg',
-    price: '\$10.00',
-    photographer: 'Abraham Costa',
+    imagePath: 'assets/images/animals/29.jpg',
     title: 'Spring',
-    details:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error aspernatur, sequi inventore eligendi vitae dolorem animi suscipit. Nobis, cumque.',
+
   ),
   ImageDetails(
-    imagePath: 'assets/images/10.jpg',
-    price: '\$30.00',
-    photographer: 'Jamie Bryan',
+    imagePath: 'assets/images/animals/30.jpg',
     title: 'Casual Look',
-    details:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error aspernatur, sequi inventore eligendi vitae dolorem animi suscipit. Nobis, cumque.',
+
   ),
   ImageDetails(
-    imagePath: 'assets/images/11.jpg',
-    price: '\$20.00',
-    photographer: 'Jamie Bryan',
+    imagePath: 'assets/images/animals/31.jpg',
     title: 'New York',
-    details:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error aspernatur, sequi inventore eligendi vitae dolorem animi suscipit. Nobis, cumque.',
   ),
   ImageDetails(
-    imagePath: 'assets/images/12.jpg',
-    price: '\$20.00',
-    photographer: 'Jamie Bryan',
+    imagePath: 'assets/images/animals/32.jpg',
     title: 'New York',
-    details:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error aspernatur, sequi inventore eligendi vitae dolorem animi suscipit. Nobis, cumque.',
+ 
   ),
   ImageDetails(
-    imagePath: 'assets/images/13.jpg',
-    price: '\$20.00',
-    photographer: 'Jamie Bryan',
+    imagePath: 'assets/images/animals/33.jpg',
     title: 'New York',
-    details:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error aspernatur, sequi inventore eligendi vitae dolorem animi suscipit. Nobis, cumque.',
+
   ),
   ImageDetails(
-    imagePath: 'assets/images/14.jpg',
-    price: '\$20.00',
-    photographer: 'Jamie Bryan',
+    imagePath: 'assets/images/animals/34.jpg',
     title: 'New York',
-    details:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error aspernatur, sequi inventore eligendi vitae dolorem animi suscipit. Nobis, cumque.',
   ),
   ImageDetails(
-    imagePath: 'assets/images/11.jpg',
-    price: '\$20.00',
-    photographer: 'Jamie Bryan',
+    imagePath: 'assets/images/animals/35.jpg',
     title: 'New York',
-    details:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil error aspernatur, sequi inventore eligendi vitae dolorem animi suscipit. Nobis, cumque.',
+
   ),
   
 ];
@@ -212,9 +161,6 @@ class _MyHomePageState extends State<MyHomePage> {
                             builder: (context) => DetailsPage(
                               imagePath: _images[index].imagePath,
                               title: _images[index].title,
-                              photographer: _images[index].photographer,
-                              price: _images[index].price,
-                              details: _images[index].details,
                               index: index,
                             ),
                           ),
@@ -248,15 +194,11 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 class ImageDetails {
   final String imagePath;
-  final String price;
-  final String photographer;
-  final String title;
-  final String details;
+final String title;
+
   ImageDetails({
     required this.imagePath,
-    required this.price,
-    required this.photographer,
     required this.title,
-    required this.details,
+    
   });
 }
