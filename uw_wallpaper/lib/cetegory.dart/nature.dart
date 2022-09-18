@@ -33,71 +33,71 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final List<ImageDetails> _images = [
   ImageDetails(
-    imagePath: 'assets/images/animals/21.jpg',
+    imagePath: 'assets/images/nature/91.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/22.jpg',
+    imagePath: 'assets/images/nature/091.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/23.jpg',
+    imagePath: 'assets/images/nature/92.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/24.jpg',
+    imagePath: 'assets/images/nature/092.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/25.jpg',
+    imagePath: 'assets/images/nature/93.jpg',
 
     title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/26.jpg',
+    imagePath: 'assets/images/nature/093.jpg',
 
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/27.jpg',
+    imagePath: 'assets/images/nature/95.jpg',
     title: 'New York',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/28.jpg',
+    imagePath: 'assets/images/nature/095.jpg',
     title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/29.jpg',
+    imagePath: 'assets/images/nature/96.jpg',
     title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/30.jpg',
+    imagePath: 'assets/images/nature/97.jpg',
     title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/31.jpg',
+    imagePath: 'assets/images/nature/98.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/32.jpg',
+    imagePath: 'assets/images/nature/100.jpg',
     title: 'DOWNLODE NOW',
  
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/33.jpg',
+    imagePath: 'assets/images/nature/91.jpg',
     title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/34.jpg',
+    imagePath: 'assets/images/nature/91.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/35.jpg',
+    imagePath: 'assets/images/nature/91.jpg',
     title: 'DOWNLODE NOW',
 
   ),

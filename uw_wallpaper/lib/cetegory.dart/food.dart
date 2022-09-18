@@ -33,71 +33,70 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final List<ImageDetails> _images = [
   ImageDetails(
-    imagePath: 'assets/images/animals/21.jpg',
+    imagePath: 'assets/images/food/61.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/22.jpg',
+    imagePath: 'assets/images/food/061.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/23.jpg',
+    imagePath: 'assets/images/food/62.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/24.jpg',
+    imagePath: 'assets/images/food/062.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/25.jpg',
+    imagePath: 'assets/images/food/63.jpg',
 
     title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/26.jpg',
-
+    imagePath: 'assets/images/food/063.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/27.jpg',
+    imagePath: 'assets/images/food/64.jpg',
     title: 'New York',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/28.jpg',
+    imagePath: 'assets/images/food/064.jpg',
     title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/29.jpg',
+    imagePath: 'assets/images/food/65.jpg',
     title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/30.jpg',
+    imagePath: 'assets/images/food/065.jpg',
     title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/31.jpg',
+    imagePath: 'assets/images/food/66.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/32.jpg',
+    imagePath: 'assets/images/food/67.jpg',
     title: 'DOWNLODE NOW',
  
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/33.jpg',
+    imagePath: 'assets/images/food/68.jpg',
     title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/34.jpg',
+    imagePath: 'assets/images/food/69.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/animals/35.jpg',
+    imagePath: 'assets/images/food/70.jpg',
     title: 'DOWNLODE NOW',
 
   ),

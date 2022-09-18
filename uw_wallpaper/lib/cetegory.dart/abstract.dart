@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/abstract/9.jpg',
+    imagePath: 'assets/images/abstract/16.jpg',
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
@@ -74,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   ),
   ImageDetails(
-    imagePath: 'assets/images/abstract/6.jpg',
+    imagePath: 'assets/images/abstract/17.jpg',
     title: 'DOWNLODE NOW',
 
   ),
@@ -97,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
     title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/abstract/14.jpg',
+    imagePath: 'assets/images/abstract/18.jpg',
     title: 'DOWNLODE NOW',
 
   ),

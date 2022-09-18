@@ -107,6 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.lightGreenAccent,
         appBar: AppBar(
           title: (const Text('Universal Wallpaper')),
           actions: [
@@ -170,7 +171,7 @@ class _MyHomePageState extends State<MyHomePage> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(
-              height: 5,
+              height: 7,
               
             ),
             Expanded(
@@ -179,7 +180,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 
                 margin: const EdgeInsets.only(left: 12,right: 12),
                 padding: const EdgeInsets.symmetric(
-                
+                  horizontal: 2,
+                  vertical: 2,
                 ),
                 decoration: const BoxDecoration(
                   color: Colors.white,

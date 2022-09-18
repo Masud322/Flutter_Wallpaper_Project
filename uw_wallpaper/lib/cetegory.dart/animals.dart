@@ -101,6 +101,35 @@ class _MyHomePageState extends State<MyHomePage> {
     title: 'DOWNLODE NOW',
 
   ),
+  ImageDetails(
+    imagePath: 'assets/images/animals/36.jpg',
+    title: 'DOWNLODE NOW',
+ 
+  ),
+  ImageDetails(
+    imagePath: 'assets/images/animals/41.jpg',
+    title: 'DOWNLODE NOW',
+
+  ),
+  ImageDetails(
+    imagePath: 'assets/images/animals/42.jpg',
+    title: 'DOWNLODE NOW',
+  ),
+  ImageDetails(
+    imagePath: 'assets/images/animals/43.jpg',
+    title: 'DOWNLODE NOW',
+
+  ),
+  ImageDetails(
+    imagePath: 'assets/images/animals/44.jpg',
+    title: 'DOWNLODE NOW',
+
+  ),
+  ImageDetails(
+    imagePath: 'assets/images/animals/21.jpg',
+    title: 'DOWNLODE NOW',
+
+  ),
   
 ];
   @override
