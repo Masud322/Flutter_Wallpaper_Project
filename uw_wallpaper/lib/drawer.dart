@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:first_flutter_app/about_page.dart';
 import 'package:first_flutter_app/favorite.dart';
-import 'package:first_flutter_app/gallery.dart';
+import 'package:first_flutter_app/gallery_page.dart';
 import 'package:first_flutter_app/main.dart';
 import 'package:first_flutter_app/signup.dart';
 import 'package:flutter/material.dart';
@@ -61,7 +61,7 @@ class _AppDrawerState extends State<AppDrawer> {
             onTap: () {
               Navigator.push(
                  context,
-                   MaterialPageRoute(builder: (context) => const GalleryPage(title: '',)),
+                   MaterialPageRoute(builder: (context) => const Gallery_Page()),
                    
                    );
             },
@@ -81,16 +81,19 @@ class _AppDrawerState extends State<AppDrawer> {
               // Array list of items
               items: items.map((String items) {
                 return DropdownMenuItem(
+                  
                   value: items,
                   child: Text(items),
                 );
               }).toList(),
               // After selecting the desired option,it will
               // change button value to selected value
+              
               onChanged: (String? newValue) {
                 setState(() {
                   dropdownvalue = newValue!;
                 });
+                
               },
               underline: DropdownButtonHideUnderline(child: Container()),
 

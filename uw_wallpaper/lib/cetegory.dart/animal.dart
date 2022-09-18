@@ -1,18 +1,16 @@
 import 'package:first_flutter_app/Home_gallery.dart';
 import 'package:first_flutter_app/details_page.dart';
 import 'package:first_flutter_app/drawer.dart';
+import 'package:first_flutter_app/navibar.dart';
 import 'package:flutter/material.dart';
 import 'package:first_flutter_app/login_page.dart';
 
-import 'home_page.dart';
-import 'navibar.dart';
-
 void main() {
-  runApp(const MyApp());
+  runApp(const AnimalPage());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class AnimalPage extends StatelessWidget {
+  const AnimalPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +35,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final List<ImageDetails> _images = [
   ImageDetails(
-    imagePath: 'assets/images/1.jpg',
+    imagePath: 'assets/images/animals21.JPG',
     price: '\$20.00',
     photographer: 'Martin Andres',
     title: 'New Year',
@@ -162,60 +160,19 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: (const Text('Universal Wallpaper')),
-          actions: [
-            IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const LoginPage()),
-                );
-              },
-              icon: const Icon(Icons.login),
-            ),
-            Center(
-                child: TextButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const LoginPage()),
-                );
-              },
-              child: const Text(
-                'Sign In',
-                style: TextStyle(color: Colors.black),
-              ),
-            )),
-          ],
+          
+          title:const Center (child: Text('Universal Wallpaper')), 
         ),
-        
-        drawer: const AppDrawer(),
+        backgroundColor: Colors.lightGreenAccent,
         body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(left: 32, right: 32, top: 10),
-              child: TextField(
-                decoration: InputDecoration(
-                    border: const OutlineInputBorder(),
-                    hintText: 'Search your favorite photos',
-                    suffixIcon: TextButton(
-                      onPressed: () {},
-                      child: const Text(
-                        'Enter',
-                        style: TextStyle(fontSize: 18, color: Colors.black),
-                      ),
-                    )),
-                onChanged: ((value) {}),
-              ),
-            ),
-            
             const SizedBox(
-              height: 5,
+              height: 15,
             ),
             const Text(
-              'All Photos',
+              'Gallery',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w600,
@@ -224,23 +181,20 @@ class _MyHomePageState extends State<MyHomePage> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(
-              height: 5,
-              
+              height: 15,
             ),
             Expanded(
-              
               child: Container(
-                
                 margin: EdgeInsets.only(left: 12,right: 12),
                 padding: const EdgeInsets.symmetric(
-                
+                  horizontal: 2,
+                  vertical: 2,
                 ),
                 decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
-                    
-                    //topLeft: Radius.circular(30),
-                    //topRight: Radius.circular(30),
+                    topLeft: Radius.circular(0),
+                    topRight: Radius.circular(0),
                   ),
                 ),
                 child: GridView.builder(
@@ -286,8 +240,7 @@ class _MyHomePageState extends State<MyHomePage> {
             )
           ],
         ),
-      ),
-      
+      ), 
       bottomNavigationBar: const NaviBar(),
     );
         

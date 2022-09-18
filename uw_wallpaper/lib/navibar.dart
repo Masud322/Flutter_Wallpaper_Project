@@ -1,8 +1,8 @@
 import 'package:first_flutter_app/favorite.dart';
+import 'package:first_flutter_app/gallery_page.dart';
 import 'package:first_flutter_app/main.dart';
 import 'package:flutter/material.dart';
 
-import 'gallery.dart';
 class NaviBar extends StatefulWidget {
   const NaviBar({super.key});
 
@@ -11,46 +11,90 @@ class NaviBar extends StatefulWidget {
 }
 
 class _NaviBarState extends State<NaviBar> {
-  int index = 0;
-  final screen= [
-    MyApp(),
-    GalleryPage(title: '',),
-    Favorite_1(),
-
-  ];
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(child:  NavigationBarTheme(data: const NavigationBarThemeData(
-     indicatorColor: Colors.black,
-     labelTextStyle: MaterialStatePropertyAll(
-      TextStyle(
-        fontSize: 14,fontWeight: FontWeight.w500
+    return SafeArea(child: 
+    Container(
+      height: 57,
+      decoration: BoxDecoration(
+        color: Theme.of(context).primaryColor,
+        borderRadius: const BorderRadius.only(
+          topLeft: Radius.circular(0),
+          topRight: Radius.circular(0),
+        ),
       ),
-      ),
-    ),
-     child:  NavigationBar(
-      height: 60,
-      backgroundColor: Colors.amber,
-      selectedIndex: index,
-      onDestinationSelected: (index) =>
-      setState(() => this.index = index),
-      destinations:  const [
-        NavigationDestination(
-          icon: Icon(Icons.home,color: Colors.white,),
-         label: 'Home'),
-      
-         NavigationDestination(
-          icon: Icon(Icons.photo_library,color: Colors.white,),
-         label: 'Gallery'),
-         NavigationDestination(
-          icon: Icon(Icons.favorite,color: Colors.white,),
-         label: 'Favorite'),
-      ],
-     
-    ),
-    
-    ),
+      // ignore: prefer_const_constructors
+      child:SafeArea(
+        child:
+        Row(
+        
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          ElevatedButton(
+              onPressed: () {},
+              style: ButtonStyle(
+                overlayColor: MaterialStateProperty.resolveWith<Color?>(
+                  (Set<MaterialState> states) {
+                    if (states.contains(MaterialState.hovered))
+                      return Colors.blue; //<-- SEE HERE
+                    return null; // Defer to the widget's default.
+                  },
+                ),
+              ),
+              child: IconButton(onPressed: (){
+              Navigator.push(
+                 context,
+                   MaterialPageRoute(builder: (context) => const MyApp()),
+                   
+                   );
+              }, icon: Icon(Icons.home))
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              style: ButtonStyle(
+                
+                overlayColor: MaterialStateProperty.resolveWith<Color?>(
+                  (Set<MaterialState> states) {
+                    if (states.contains(MaterialState.hovered))
+                      return Colors.redAccent; //<-- SEE HERE
+                    return null; // Defer to the widget's default.
+                  },
+                ),
+              ),
+              child: IconButton(onPressed: (){
+              Navigator.push(
+                 context,
+                   MaterialPageRoute(builder: (context) => const Gallery_Page()),
+                   
+                   );
+              }, icon: Icon(Icons.photo_library))
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              style: ButtonStyle(
+                overlayColor: MaterialStateProperty.resolveWith<Color?>(
+                  (Set<MaterialState> states) {
+                    if (states.contains(MaterialState.hovered))
+                      return Colors.green; //<-- SEE HERE
+                    return null; // Defer to the widget's default.
+                  },
+                ),
+              ),
+              child: IconButton(onPressed: (){
+              Navigator.push(
+                 context,
+                   MaterialPageRoute(builder: (context) => const Favorite_1()),
+                   
+                   );
+              }, icon: Icon(Icons.favorite))
+            ),
+          
+          
+        ],
+      ),)
+       
+    )
     );
   }
 }

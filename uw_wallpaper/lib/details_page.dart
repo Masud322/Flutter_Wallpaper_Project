@@ -31,7 +31,7 @@ class _DetailsPageState extends State<DetailsPage> {
           children: <Widget>[
             Expanded(
               child: Hero(
-                tag: 'logo${widget.index}',
+                tag: 'logo ${widget.index}',
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: const BorderRadius.only(
@@ -93,12 +93,12 @@ class _DetailsPageState extends State<DetailsPage> {
                   Row(
                     children: <Widget>[
                       Expanded(
-                        child: FlatButton(
+                        child: TextButton(
                           onPressed: () {
                             Navigator.pop(context);
                           },
-                          padding: const EdgeInsets.symmetric(vertical: 15),
-                          color: Colors.lightBlueAccent,
+                          // padding: const EdgeInsets.symmetric(vertical: 15),
+                          // color: Colors.lightBlueAccent,
                           child: const Text(
                             'Back',
                             style: TextStyle(
@@ -111,10 +111,10 @@ class _DetailsPageState extends State<DetailsPage> {
                         width: 15,
                       ),
                       Expanded(
-                        child: FlatButton(
+                        child: TextButton(
                           onPressed: () {},
-                          padding: const EdgeInsets.symmetric(vertical: 15),
-                          color: Colors.lightBlueAccent,
+                          // padding: const EdgeInsets.symmetric(vertical: 15),
+                          // color: Colors.lightBlueAccent,
                           child: const Text(
                             'Buy',
                             style: TextStyle(
@@ -134,5 +134,5 @@ class _DetailsPageState extends State<DetailsPage> {
     );
   }
 
-  FlatButton({required Null Function() onPressed, required EdgeInsets padding, required MaterialAccentColor color, required Text child}) {}
+  // FlatButton({required Null Function() onPressed, required EdgeInsets padding, required MaterialAccentColor color, required Text child}) {}
 }
