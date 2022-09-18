@@ -4,6 +4,7 @@ import 'package:first_flutter_app/Home_gallery.dart';
 import 'package:first_flutter_app/cetegory.dart/animal.dart';
 import 'package:first_flutter_app/details_page.dart';
 import 'package:first_flutter_app/drawer.dart';
+import 'package:first_flutter_app/main.dart';
 import 'package:flutter/material.dart';
 import 'package:first_flutter_app/login_page.dart';
 import 'navibar.dart';
@@ -12,6 +13,7 @@ void main() {
   runApp(const Gallery_Page());
 }
 
+// ignore: camel_case_types
 class Gallery_Page extends StatelessWidget {
   const Gallery_Page({Key? key}) : super(key: key);
 
@@ -41,8 +43,17 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          
-          title:const Center (child: Text('Universal Wallpaper')), 
+          title: (const Text('Universal Wallpaper')),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () {
+            Navigator.push(
+                 context,
+                   MaterialPageRoute(builder: (context) => const MyApp()),
+                   
+                   );
+          },
+        ), 
         ),
         backgroundColor: Colors.lightGreenAccent,
         body: SingleChildScrollView(
@@ -60,6 +71,15 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               textAlign: TextAlign.center,
             ),
+            const Text(
+              '......Select Your Catagory......',
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.w600,
+                color: Colors.black,
+              ),
+              textAlign: TextAlign.center,
+            ),
             
             
              
@@ -72,17 +92,19 @@ class _MyHomePageState extends State<MyHomePage> {
                    );
                 },
                 child: Container(
+                  
                   padding: const EdgeInsets.all(12),
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 10),
                   height: 140,
                   decoration: BoxDecoration(
-                    image: const DecorationImage(image: AssetImage('assets/images/animals/88.png'),fit: BoxFit.cover,
+                    color: Colors.black.withOpacity(0.5),
+                    image: const DecorationImage(image: AssetImage('assets/images/animals/25.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
                   ),
                    child: const Center(
-                    child: Text('Animal',style: TextStyle(color: Colors.black,fontSize: 25),),
+                    child: Text('ANIMALS',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight. bold),),
                    )
                    
                   ),
@@ -100,13 +122,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
                   height: 140,
                   decoration: BoxDecoration(
-                    image: const DecorationImage(image: AssetImage('assets/images/birds/41.jpg'),fit: BoxFit.cover,
+                    color: Colors.black.withOpacity(0.5),
+                    image: const DecorationImage(image: AssetImage('assets/images/birds/43.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
                   ),
                    child: const Center(
-                    child: Text('Birds',style: TextStyle(color: Colors.black,fontSize: 25),),
+                    child: Text('BIRDS',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight. bold),),
                    )
                    
                   ),
@@ -124,13 +147,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
                   height: 140,
                   decoration: BoxDecoration(
-                    image: const DecorationImage(image: AssetImage('assets/images/car/51.jpg'),fit: BoxFit.cover,
+                    color: Colors.black.withOpacity(0.5),
+                    image: const DecorationImage(image: AssetImage('assets/images/car/51.jpeg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
                   ),
                    child: const Center(
-                    child: Text('Car & Bikes',style: TextStyle(color: Colors.black,fontSize: 25),),
+                    child: Text('CARS & BIKES',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight. bold),),
                    )
                    
                   ),
@@ -148,13 +172,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
                   height: 140,
                   decoration: BoxDecoration(
+                    color: Colors.black.withOpacity(0.5),
                     image: const DecorationImage(image: AssetImage('assets/images/food/61.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
                   ),
                    child: const Center(
-                    child: Text('Food',style: TextStyle(color: Colors.black,fontSize: 25),),
+                    child: Text('FOODS',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight. bold),),
                    )
                    
                   ),
@@ -172,13 +197,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
                   height: 140,
                   decoration: BoxDecoration(
+                    color: Colors.black.withOpacity(0.5),
                     image: const DecorationImage(image: AssetImage('assets/images/games/71.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
                   ),
                    child: const Center(
-                    child: Text('Games',style: TextStyle(color: Colors.black,fontSize: 25),),
+                    child: Text('GAMES',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight. bold),),
                    )
                    
                   ),
@@ -196,13 +222,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
                   height: 140,
                   decoration: BoxDecoration(
+                    color: Colors.black.withOpacity(0.5),
                     image: const DecorationImage(image: AssetImage('assets/images/movies/81.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
                   ),
                    child: const Center(
-                    child: Text('Movies',style: TextStyle(color: Colors.black,fontSize: 25),),
+                    child: Text('MOVIES',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight. bold),),
                    )
                    
                   ),
@@ -216,17 +243,19 @@ class _MyHomePageState extends State<MyHomePage> {
                    );
                 },
                 child: Container(
+                  
                   padding: const EdgeInsets.all(12),
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
                   height: 140,
                   decoration: BoxDecoration(
+                    color: Colors.black.withOpacity(0.5),
                     image: const DecorationImage(image: AssetImage('assets/images/nature/91.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
                   ),
                    child: const Center(
-                    child: Text('Nature',style: TextStyle(color: Colors.black,fontSize: 25),),
+                    child: Text('NATURE',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight. bold),),
                    )
                    
                   ),
@@ -244,13 +273,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
                   height: 140,
                   decoration: BoxDecoration(
-                    image: const DecorationImage(image: AssetImage('assets/images/space/101.jpg'),fit: BoxFit.cover,
+                    color: Colors.black.withOpacity(0.5),
+                    image: const DecorationImage(image: AssetImage('assets/images/sports/111.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
                   ),
                    child: const Center(
-                    child: Text('Sports',style: TextStyle(color: Colors.black,fontSize: 25),),
+                   child: Text('SPORTS',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight. bold),),
                    )
                    
                   ),
@@ -268,13 +298,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
                   height: 140,
                   decoration: BoxDecoration(
-                    image: const DecorationImage(image: AssetImage('assets/images/sports/113.jpg'),fit: BoxFit.cover,
+                    color: Colors.black.withOpacity(0.5),
+                    image: const DecorationImage(image: AssetImage('assets/images/space/103.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
                   ),
                    child: const Center(
-                    child: Text('Space',style: TextStyle(color: Colors.black,fontSize: 25),),
+                    child: Text('SPACE',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight. bold),),
                    )
                    
                   ),
@@ -292,29 +323,22 @@ class _MyHomePageState extends State<MyHomePage> {
                   margin: const EdgeInsets.only(left: 12,right: 12,top: 3),
                   height: 140,
                   decoration: BoxDecoration(
+                    color: Colors.black.withOpacity(0.5),
                     image: const DecorationImage(image: AssetImage('assets/images/travel/121.jpg'),fit: BoxFit.cover,
                     ),
                     border: Border.all(width: 1),
                     borderRadius: BorderRadius.circular(10)
                   ),
                    child: const Center(
-                    child: Text('Travel',style: TextStyle(color: Colors.black,fontSize: 25),),
+                    child: Text('TRAVELS',style: TextStyle(color: Colors.white,fontSize: 25,fontWeight: FontWeight. bold),),
                    )
                    
                   ),
               ),
-              
-            
-              
-                
-               
-              
-              
-          ]
-          
-            )
-          
+          ],         
+            )          
         ),
+        bottomNavigationBar: const NaviBar(),
       );
       
     

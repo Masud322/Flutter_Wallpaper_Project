@@ -1,9 +1,7 @@
-import 'package:first_flutter_app/Home_gallery.dart';
 import 'package:first_flutter_app/details_page.dart';
-import 'package:first_flutter_app/drawer.dart';
+import 'package:first_flutter_app/gallery_page.dart';
 import 'package:first_flutter_app/navibar.dart';
 import 'package:flutter/material.dart';
-import 'package:first_flutter_app/login_page.dart';
 
 void main() {
   runApp(const AnimalPage());
@@ -36,30 +34,30 @@ class _MyHomePageState extends State<MyHomePage> {
   final List<ImageDetails> _images = [
   ImageDetails(
     imagePath: 'assets/images/animals/21.jpg',
-    title: 'New Year',
+    title: 'DOWNLODE NOW',
   ),
   ImageDetails(
     imagePath: 'assets/images/animals/22.jpg',
-    title: 'Spring',
+    title: 'DOWNLODE NOW',
   ),
   ImageDetails(
     imagePath: 'assets/images/animals/23.jpg',
-    title: 'Casual Look',
+    title: 'DOWNLODE NOW',
   ),
   ImageDetails(
     imagePath: 'assets/images/animals/24.jpg',
-    title: 'New York',
+    title: 'DOWNLODE NOW',
   ),
   ImageDetails(
     imagePath: 'assets/images/animals/25.jpg',
 
-    title: 'New York',
+    title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
     imagePath: 'assets/images/animals/26.jpg',
 
-    title: 'New York',
+    title: 'DOWNLODE NOW',
   ),
   ImageDetails(
     imagePath: 'assets/images/animals/27.jpg',
@@ -67,40 +65,40 @@ class _MyHomePageState extends State<MyHomePage> {
   ),
   ImageDetails(
     imagePath: 'assets/images/animals/28.jpg',
-    title: 'New York',
+    title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
     imagePath: 'assets/images/animals/29.jpg',
-    title: 'Spring',
+    title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
     imagePath: 'assets/images/animals/30.jpg',
-    title: 'Casual Look',
+    title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
     imagePath: 'assets/images/animals/31.jpg',
-    title: 'New York',
+    title: 'DOWNLODE NOW',
   ),
   ImageDetails(
     imagePath: 'assets/images/animals/32.jpg',
-    title: 'New York',
+    title: 'DOWNLODE NOW',
  
   ),
   ImageDetails(
     imagePath: 'assets/images/animals/33.jpg',
-    title: 'New York',
+    title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
     imagePath: 'assets/images/animals/34.jpg',
-    title: 'New York',
+    title: 'DOWNLODE NOW',
   ),
   ImageDetails(
     imagePath: 'assets/images/animals/35.jpg',
-    title: 'New York',
+    title: 'DOWNLODE NOW',
 
   ),
   
@@ -110,7 +108,17 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
         appBar: AppBar(
           
-          title:const Center (child: Text('Universal Wallpaper')), 
+          title: (const Text('Universal Wallpaper')), 
+          leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () {
+            Navigator.push(
+                 context,
+                   MaterialPageRoute(builder: (context) => const Gallery_Page()),
+                   
+                   );
+          },
+        ), 
         ),
         backgroundColor: Colors.lightGreenAccent,
         body: SafeArea(
@@ -121,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 15,
             ),
             const Text(
-              'Gallery',
+              '.....Animals.....',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w600,

@@ -14,16 +14,7 @@ class AppDrawer extends StatefulWidget {
 }
 
 class _AppDrawerState extends State<AppDrawer> {
-  String dropdownvalue = 'Animation';  
  
-  // List of items in our dropdown menu
-  var items = [   
-    'Animation',
-    'Animal',
-    'Car',
-    'Catoon',
-    'Natural',
-  ];
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -68,37 +59,17 @@ class _AppDrawerState extends State<AppDrawer> {
           ),
           
           ListTile(
-            leading: const Icon(Icons.category),
-            title: 
-              DropdownButton(
-               
-               
-              // Initial Value
-              value: dropdownvalue,
-               
-              // Down Arrow Icon
-              icon: const Icon(Icons.keyboard_arrow_down),   
-               
-              // Array list of items
-              items: items.map((String items) {
-                return DropdownMenuItem(
-                  
-                  value: items,
-                  child: Text(items),
-                );
-              }).toList(),
-              // After selecting the desired option,it will
-              // change button value to selected value
-              
-              onChanged: (String? newValue) {
-                setState(() {
-                  dropdownvalue = newValue!;
-                });
-                
-              },
-              underline: DropdownButtonHideUnderline(child: Container()),
-
+            leading:const Icon(
+              Icons.category,
             ),
+            title: const Text('Categories'),
+            onTap: () {
+              Navigator.push(
+                 context,
+                   MaterialPageRoute(builder: (context) => const Gallery_Page()),
+                   
+                   );
+            },
           ),
           ListTile(
             leading:const Icon(

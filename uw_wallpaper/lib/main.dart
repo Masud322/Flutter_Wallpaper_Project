@@ -1,4 +1,3 @@
-import 'package:first_flutter_app/Home_gallery.dart';
 import 'package:first_flutter_app/details_page.dart';
 import 'package:first_flutter_app/drawer.dart';
 import 'package:flutter/material.dart';
@@ -36,71 +35,71 @@ class _MyHomePageState extends State<MyHomePage> {
   final List<ImageDetails> _images = [
    ImageDetails(
     imagePath: 'assets/images/1.jpg',
-    title: 'New Year',
+    title: 'DOWNLODE NOW',
   ),
   ImageDetails(
     imagePath: 'assets/images/8.jpg',
-    title: 'Spring',
+    title: 'DOWNLODE NOW',
   ),
   ImageDetails(
     imagePath: 'assets/images/6.jpg',
-    title: 'Casual Look',
+    title: 'DOWNLODE NOW',
   ),
   ImageDetails(
     imagePath: 'assets/images/4.jpg',
-    title: 'New York',
+    title: 'DOWNLODE NOW',
   ),
   ImageDetails(
     imagePath: 'assets/images/5.jpg',
 
-    title: 'New York',
+    title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
     imagePath: 'assets/images/6.jpg',
 
-    title: 'New York',
+    title: 'DOWNLODE NOW',
   ),
   ImageDetails(
     imagePath: 'assets/images/7.jpg',
-    title: 'New York',
+    title: 'DOWNLODE NOW',
   ),
   ImageDetails(
     imagePath: 'assets/images/8.jpg',
-    title: 'New York',
+    title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
     imagePath: 'assets/images/9.jpg',
-    title: 'Spring',
+    title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
     imagePath: 'assets/images/10.jpg',
-    title: 'Casual Look',
+    title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
     imagePath: 'assets/images/11.jpg',
-    title: 'New York',
+    title: 'DOWNLODE NOW',
   ),
   ImageDetails(
     imagePath: 'assets/images/12.jpg',
-    title: 'New York',
+    title: 'DOWNLODE NOW',
  
   ),
   ImageDetails(
     imagePath: 'assets/images/13.jpg',
-    title: 'New York',
+    title: 'DOWNLODE NOW',
 
   ),
   ImageDetails(
     imagePath: 'assets/images/14.jpg',
-    title: 'New York',
+    title: 'DOWNLODE NOW',
   ),
   ImageDetails(
-    imagePath: 'assets/images/15.jpg',
-    title: 'New York',
+    imagePath: 'assets/images/11.jpg',
+    title: 'DOWNLODE NOW',
 
   ),
   
@@ -178,7 +177,7 @@ class _MyHomePageState extends State<MyHomePage> {
               
               child: Container(
                 
-                margin: EdgeInsets.only(left: 12,right: 12),
+                margin: const EdgeInsets.only(left: 12,right: 12),
                 padding: const EdgeInsets.symmetric(
                 
                 ),
@@ -239,13 +238,10 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 class ImageDetails {
   final String imagePath;
-
-
   final String title;
 
   ImageDetails({
     required this.imagePath,
-
     required this.title,
 
   });

@@ -1,3 +1,4 @@
+import 'package:first_flutter_app/navibar.dart';
 import 'package:flutter/material.dart';
 
 class DetailsPage extends StatefulWidget {
@@ -20,6 +21,9 @@ class _DetailsPageState extends State<DetailsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Universal Wallpaper'),
+      ),
       body: Container(
         child: Column(
           children: <Widget>[
@@ -40,59 +44,42 @@ class _DetailsPageState extends State<DetailsPage> {
               ),
             ),
             Container(
-              height: 260,
+              margin: EdgeInsets.only(top: 50),
+              height: 140,
+
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                
                 children: <Widget>[
                   Padding(
                     padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Text(
-                          widget.title,
-                          style: const TextStyle(
-                            color: Colors.lightBlueAccent,
-                            fontSize: 22,
-                            fontWeight: FontWeight.w600,
-                          ),
-                        ),
+                    child: Center(
+                      child: Column(
                         
-                       
-                        
-                      ],
+                        children: <Widget>[
+                          
+                          TextButton(onPressed: (){
+
+                          }, child: Text(
+                            widget.title,
+                            style: const TextStyle(
+                              color: Color.fromARGB(255, 67, 228, 27),
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold
+                            ),
+                           ),
+                          ), 
+                        ],
+                      ),
                     ),
                   ),
-                  Row(
-                    children: <Widget>[
-                      Expanded(
-                        child: TextButton(
-                          onPressed: () {
-                            Navigator.pop(context);
-                          },
-                          // padding: const EdgeInsets.symmetric(vertical: 15),
-                          // color: Colors.lightBlueAccent,
-                          child: const Text(
-                            'Back',
-                            style: TextStyle(
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(
-                        width: 15,
-                      ),
-                      
-                    ],
-                  )
+                  
                 ],
               ),
             ),
           ],
         ),
       ),
+      bottomNavigationBar: const NaviBar(),
     );
   }
 
