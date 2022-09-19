@@ -18,6 +18,7 @@ class DetailsPage extends StatefulWidget {
 }
 
 class _DetailsPageState extends State<DetailsPage> {
+  bool _hasBeenPressed = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,9 +33,9 @@ class _DetailsPageState extends State<DetailsPage> {
                 tag: 'logo ${widget.index}',
                 child: Container(
                   decoration: BoxDecoration(
-                    borderRadius: const BorderRadius.only(
-                        bottomLeft: Radius.circular(30),
-                        bottomRight: Radius.circular(30)),
+                    //borderRadius: const BorderRadius.only(
+                        //bottomLeft: Radius.circular(30),
+                        //bottomRight: Radius.circular(30)),
                     image: DecorationImage(
                       image: AssetImage(widget.imagePath),
                       fit: BoxFit.cover,
@@ -43,44 +44,57 @@ class _DetailsPageState extends State<DetailsPage> {
                 ),
               ),
             ),
-            Container(
-              margin: EdgeInsets.only(top: 50),
-              height: 140,
+           Expanded(child: 
+           Container(
+            padding: EdgeInsets.only(left: 100),
+            child: Row(
+              children: [
+                Container(
+                  
+                  height: 40,
+                  width: 250,
+                  decoration: BoxDecoration(
+                    color: Colors.black.withOpacity(0.5),
+                  ),
+                  child:Center(
+                    child: TextButton(onPressed: (){
 
-              child: Column(
-                
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
-                    child: Center(
-                      child: Column(
-                        
-                        children: <Widget>[
-                          
-                          TextButton(onPressed: (){
-
-                          },
-                          
-                           child: Text(
+                    }, child: Text(
                             widget.title,
                             style: const TextStyle(
-                              color: Color.fromARGB(255, 67, 228, 27),
-                              fontSize: 22,
+                              color: Colors.white,
+                              fontSize: 20,
                               fontWeight: FontWeight.bold
                             ),
                            ),
-                          ), 
-                        ],
                       ),
-                    ),
-                  ),
+                  ) 
+                ),
+                Padding(padding:EdgeInsets.all(5)),
+                Container(
                   
-                ],
-              ),
+                  decoration: BoxDecoration(
+                    color: Colors.black.withOpacity(0.5),
+                  ),
+                  child: IconButton(icon: Icon(Icons.favorite_sharp),
+                  //color: Colors.white,
+                  color: _hasBeenPressed ? Color.fromARGB(255, 255, 17, 1) : Colors.white,
+                  onPressed: () => {
+                setState(() {
+                  _hasBeenPressed = !_hasBeenPressed;
+                })
+              },
+                  )
+                ),
+              ],
             ),
+           ),
+           
+           )
           ],
         ),
       ),
+      
       bottomNavigationBar: const NaviBar(),
     );
   }

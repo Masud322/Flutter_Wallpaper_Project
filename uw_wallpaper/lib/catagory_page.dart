@@ -1,16 +1,16 @@
 import 'dart:html';
 
 import 'package:first_flutter_app/Home_gallery.dart';
-import 'package:first_flutter_app/cetegory.dart/abstract.dart';
-import 'package:first_flutter_app/cetegory.dart/animals.dart';
-import 'package:first_flutter_app/cetegory.dart/car.dart';
-import 'package:first_flutter_app/cetegory.dart/food.dart';
-import 'package:first_flutter_app/cetegory.dart/games.dart';
-import 'package:first_flutter_app/cetegory.dart/movies.dart';
-import 'package:first_flutter_app/cetegory.dart/nature.dart';
-import 'package:first_flutter_app/cetegory.dart/space.dart';
-import 'package:first_flutter_app/cetegory.dart/sports.dart';
-import 'package:first_flutter_app/cetegory.dart/travel.dart';
+import 'package:first_flutter_app/cetegory/abstract.dart';
+import 'package:first_flutter_app/cetegory/animals.dart';
+import 'package:first_flutter_app/cetegory/car.dart';
+import 'package:first_flutter_app/cetegory/food.dart';
+import 'package:first_flutter_app/cetegory/games.dart';
+import 'package:first_flutter_app/cetegory/movies.dart';
+import 'package:first_flutter_app/cetegory/nature.dart';
+import 'package:first_flutter_app/cetegory/space.dart';
+import 'package:first_flutter_app/cetegory/sports.dart';
+import 'package:first_flutter_app/cetegory/travel.dart';
 import 'package:first_flutter_app/details_page.dart';
 import 'package:first_flutter_app/drawer.dart';
 import 'package:first_flutter_app/main.dart';
