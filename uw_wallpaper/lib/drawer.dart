@@ -2,8 +2,10 @@ import 'dart:ui';
 
 import 'package:first_flutter_app/about_page.dart';
 import 'package:first_flutter_app/favorite.dart';
-import 'package:first_flutter_app/gallery_page.dart';
+import 'package:first_flutter_app/catagory_page.dart';
+import 'package:first_flutter_app/login_page.dart';
 import 'package:first_flutter_app/main.dart';
+import 'package:first_flutter_app/privacy_page.dart';
 import 'package:first_flutter_app/signup.dart';
 import 'package:flutter/material.dart';
 class AppDrawer extends StatefulWidget {
@@ -44,19 +46,6 @@ class _AppDrawerState extends State<AppDrawer> {
                    );
             },
           ),
-          ListTile(
-            leading:const Icon(
-              Icons.photo,
-            ),
-            title: const Text('Gallery'),
-            onTap: () {
-              Navigator.push(
-                 context,
-                   MaterialPageRoute(builder: (context) => const Gallery_Page()),
-                   
-                   );
-            },
-          ),
           
           ListTile(
             leading:const Icon(
@@ -66,7 +55,7 @@ class _AppDrawerState extends State<AppDrawer> {
             onTap: () {
               Navigator.push(
                  context,
-                   MaterialPageRoute(builder: (context) => const Gallery_Page()),
+                   MaterialPageRoute(builder: (context) => const CatagoryPage()),
                    
                    );
             },
@@ -80,6 +69,19 @@ class _AppDrawerState extends State<AppDrawer> {
               Navigator.push(
                  context,
                    MaterialPageRoute(builder: (context) => const Favorite_1()),
+                   
+                   );
+            },
+          ),
+          ListTile(
+            leading:const Icon(
+              Icons.privacy_tip,
+            ),
+            title: const Text('Privacy Policy'),
+            onTap: () {
+              Navigator.push(
+                 context,
+                   MaterialPageRoute(builder: (context) => const PrivacyPage()),
                    
                    );
             },
@@ -107,6 +109,19 @@ class _AppDrawerState extends State<AppDrawer> {
               Navigator.push(
                  context,
                    MaterialPageRoute(builder: (context) => const AboutPage()),
+                   
+                   );
+            },
+          ),
+          ListTile(
+            leading:const Icon(
+              Icons.logout,
+            ),
+            title: const Text('Logout'),
+            onTap: () {
+              Navigator.push(
+                 context,
+                   MaterialPageRoute(builder: (context) => const LoginPage()),
                    
                    );
             },

@@ -19,12 +19,12 @@ import 'package:first_flutter_app/login_page.dart';
 import 'navibar.dart';
 
 void main() {
-  runApp(const Gallery_Page());
+  runApp(const CatagoryPage());
 }
 
 // ignore: camel_case_types
-class Gallery_Page extends StatelessWidget {
-  const Gallery_Page({Key? key}) : super(key: key);
+class CatagoryPage extends StatelessWidget {
+  const CatagoryPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
                    
                    );
           },
-        ), 
+        ),   
         ),
         backgroundColor: Colors.lightGreenAccent,
         body: SingleChildScrollView(
@@ -72,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             const Padding(padding: EdgeInsets.only(top: 10)),
             const Text(
-              'Gallery',
+              'Catagories',
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.w600,

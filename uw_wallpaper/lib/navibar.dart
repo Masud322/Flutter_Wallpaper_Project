@@ -1,5 +1,5 @@
 import 'package:first_flutter_app/favorite.dart';
-import 'package:first_flutter_app/gallery_page.dart';
+import 'package:first_flutter_app/catagory_page.dart';
 import 'package:first_flutter_app/main.dart';
 import 'package:flutter/material.dart';
 
@@ -48,7 +48,7 @@ class _NaviBarState extends State<NaviBar> {
                    MaterialPageRoute(builder: (context) => const MyApp()),
                    
                    );
-              }, icon: Icon(Icons.home))
+              }, icon: Icon(Icons.photo_library))
             ),
             ElevatedButton(
               onPressed: () {},
@@ -65,10 +65,10 @@ class _NaviBarState extends State<NaviBar> {
               child: IconButton(onPressed: (){
               Navigator.push(
                  context,
-                   MaterialPageRoute(builder: (context) => const Gallery_Page()),
+                   MaterialPageRoute(builder: (context) => const CatagoryPage()),
                    
                    );
-              }, icon: Icon(Icons.photo_library))
+              }, icon: Icon(Icons.category_sharp))
             ),
             ElevatedButton(
               onPressed: () {},

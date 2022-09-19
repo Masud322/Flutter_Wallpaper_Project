@@ -1,5 +1,5 @@
 import 'package:first_flutter_app/details_page.dart';
-import 'package:first_flutter_app/gallery_page.dart';
+import 'package:first_flutter_app/catagory_page.dart';
 import 'package:first_flutter_app/navibar.dart';
 import 'package:flutter/material.dart';
 
@@ -113,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
           onPressed: () {
             Navigator.push(
                  context,
-                   MaterialPageRoute(builder: (context) => const Gallery_Page()),
+                   MaterialPageRoute(builder: (context) => const CatagoryPage()),
                    
                    );
           },

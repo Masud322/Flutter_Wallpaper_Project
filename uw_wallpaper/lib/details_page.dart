@@ -59,7 +59,9 @@ class _DetailsPageState extends State<DetailsPage> {
                           
                           TextButton(onPressed: (){
 
-                          }, child: Text(
+                          },
+                          
+                           child: Text(
                             widget.title,
                             style: const TextStyle(
                               color: Color.fromARGB(255, 67, 228, 27),
